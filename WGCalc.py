@@ -2,20 +2,12 @@
 ##date: 4/8/2019
 
 # README #
-# This is a python script I wrote to quickly calculate my current weighted grade for my cpsc classes that don't
-# show me my weighted grade online. I wrote this becasue I couldn't find one on git to do this for me.
-# All three have been tested and accurately calculate the weighted grade for each class.
-
-#  To use this for yourself, change the if statement string checks to check for your class name
-# that is input from the user (you) in the main method. Then, make the same changes to the string checks
-# in the process() function within the class universityClass. In that same function, change the weights
-# to match your syllabus
-
-# Potential Updates #
-# option to continue calculating other classes without automatically terminating when finished
-# exception handling for bad user input
-# function to write the weighted grade to a txt file
-# gui
+# This is a python script that can be configured to calculate weighted grades for university classes. 
+# To use this for yourself, write your class name in the if self.name == "<your class>" as shown
+# in the process(self) method of class universityClass, along with the percentage it weighs/counts
+# towards your final grade. If your a Freshman, you should be able to find this in the class syllabus. 
+# Then check for this Class name in the main method, and call the associated
+# functions 
 
 class universityClass:
     # constructor to set the name of the universityClass we are calculating the weighted grade for
@@ -135,4 +127,3 @@ def main():
         dl_grade.getLabs()
         dl_grade.process()
 main()
-
